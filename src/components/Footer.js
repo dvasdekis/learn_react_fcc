@@ -1,11 +1,11 @@
 import React from "react";
 
-function Footer() {
+function Header() {
     return (
-        <footer>
-            <h3>This is my footer</h3>
+        <footer className={"footer"}>
+            <p> this is my footer</p>
         </footer>
     )
 }
 
-export default Footer
+export default Header
