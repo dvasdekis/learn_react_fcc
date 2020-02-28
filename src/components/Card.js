@@ -6,7 +6,6 @@ import React from "react";
 
 //props (function input) is an object that has properties
 function Card(props) {
-    console.log(props)
     return (
         <div className={"Card"}>
             <img src={props.contact.imgUrl} alt={""}/>
