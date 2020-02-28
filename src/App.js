@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar";
+import Main from "./components/Main";
+import Footer from "./components/Footer"
+
+// Elements are regular HTML
+// Components hold regular elements
+// Parent components hold components inside them
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> {/* A JSX comment */}
+        <NavBar/>
+        <Main/>
+        <Footer/> {/* This is how we can import elements from files */}
     </div>
   );
 }
