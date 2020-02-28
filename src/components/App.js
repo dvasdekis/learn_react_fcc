@@ -1,10 +1,16 @@
 import React from "react";
 
+import Header from "./Header"
+import Body from "./Body"
+import Footer from "./Footer"
+
 function App() {
     return (
-            <div>
-                <p>My App</p>
-            </div>
+        <div>
+            <Header />
+            <Body />
+            <Footer/>
+        </div>
     )
 }
 
