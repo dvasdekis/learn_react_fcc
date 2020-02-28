@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// Starting 'Move Components into Separate Files'.
+// Up to 49 minutes
+
 // Use CamelCase for function names
 
 ReactDOM.render(<App />, document.getElementById('root'));

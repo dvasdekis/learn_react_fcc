@@ -5,15 +5,12 @@ function Main() {
     return (
         <main>
             <div>
-                <h1>I am DIMITRI. This is Main.js</h1>
-                <p>I like this so far</p>
-                <p>I want to visit:</p>
-                <ul>
-                    <li>Spain</li>
-                    <li>Portugal</li>
-                    <li>Hell</li>
-                    <li>France & Germany</li>
-                </ul>
+                <input type="checkbox" />
+                <p>Some text I write</p>
+                <input type="checkbox" />
+                <p>Some text I write</p>
+                <input type="checkbox" />
+                <p>Some text I write</p>
             </div>
         </main>
     )
