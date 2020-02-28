@@ -1,20 +1,22 @@
 import React from "react";
 
-function Body() {
-    const firstName = "Dimitri"
-    const lastName = "Vasdekis"
-    const date = new Date()
+import Card from "./Card"
 
-    const pStyle = {
-        color: "#AF8C00", backgroundColor: "#AF2D00"
-    }
+function Body() {
     return (
         <main>
-            {/* Preferred syntax */}
-            <p style={pStyle}>Hello {firstName + " " + lastName} !!</p>
-            {/* Alternative syntax */}
-            <h4 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Hello {`${firstName} ${lastName}`}!!!</h4>
-            <p>Current time is {date.getHours() % 12} o'clock!</p>
+            <Card contact={{name: "Mr Tuggmutt", imgUrl: "http://placekitten.com/300/200/",
+                            phone: "123 456 789", email: "slain@dog.com"}}
+            />
+            <Card contact={{name: "Mr Dogfucker", imgUrl: "http://placekitten.com/320/200/",
+                phone: "123 456 789", email: "slain@dog.com"}}
+            />
+            <Card contact={{name: "Mr Smearshit", imgUrl: "http://placekitten.com/380/240/",
+                phone: "123 456 789", email: "slain@dog.com"}}
+            />
+            <Card contact={{name: "Mr WeakCoward", imgUrl: "http://placekitten.com/360/200/",
+                phone: "123 456 789", email: "slain@dog.com"}}
+            />
         </main>
     )
 }
