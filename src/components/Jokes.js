@@ -5,8 +5,8 @@ function Jokes(props) {
     return (
         <ul>
             {/* Below line is a way to check if props.gag.joke exists (!), and do something if not (&&) */}
-            <b style={{display: !props.gag.joke && "none" }}><li>Question: {props.gag.joke}</li></b>
-            <li>Answer: {props.gag.answer}</li>
+            <b style={{display: !props.joke && "none" }}><li>Question: {props.joke}</li></b>
+            <li>Answer: {props.answer}</li>
         </ul>
     )
 }
