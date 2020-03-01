@@ -1,11 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import productsData from "./vsProducts"
+import Product from "./components/Product"
 
 function App() {
+  let productset = productsData.map(function(eachProduct) {
+      return (
+          <Product
+            key = {eachProduct.id}
+            id={eachProduct.id}
+            name = {eachProduct.name}
+            description = {eachProduct.description}
+            price = {eachProduct.price}
+      /> )
+  })
+
   return (
     <div className="App">
-      <p>Hello</p>
+        {productset}
     </div>
   );
 }
