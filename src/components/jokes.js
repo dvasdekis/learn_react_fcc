@@ -11,3 +11,5 @@ function jokes(Props) {
         </div>
     )
 }
+
+export default jokes

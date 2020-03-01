@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Jokes from './components/jokes'
 
 function App() {
   return (
     <div className="App">
-      <Jokes />
+      <Jokes gag={{joke: "What kind of Dog poos well?", answer: "FroYo"}}/>
+      <Jokes gag={{joke: "What kind of Dog poos badly?", answer: "Curry and Rice"}}/>
     </div>
   );
 }
