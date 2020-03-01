@@ -3,7 +3,7 @@ import productsData from "./vsProducts"
 import Product from "./components/Product"
 
 function App() {
-  let productset = productsData.map(function(eachProduct) {
+  const productset = productsData.map(function(eachProduct) {
       return (
           <Product
             key = {eachProduct.id}
